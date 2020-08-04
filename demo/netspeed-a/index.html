@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>使用与教程</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/iview.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/raphael-min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.js"></script>
+		
+		<script src="js/iview.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#iview2').iView({
+					pauseTime: 5000,
+					pauseOnHover: true,
+					directionNavHoverOpacity: 0,
+					controlNav: true,
+					controlNavNextPrev: false,
+					controlNavTooltip: false,
+					timer: "360Bar",
+					timerDiameter: 30,
+					timerPadding: 3,
+					timerStroke: 4,
+					timerBarStroke: 0,
+					timerColor: "#0F0",
+					timerPosition: "top-right"
+				});
+			});
+		</script>	</head>
+
+	<body>
+<div id="cont">
+
+	<div class="container">
+		<div id="iview2" class="iview">
+			<div data-iview:image="photos/001.png"></div>
+			<div data-iview:image="photos/002.png"></div>
+			<div data-iview:image="photos/003.png"></div>
+			<div data-iview:image="photos/004.png"></div>
+			<div data-iview:image="photos/005.png"></div>
+			<div data-iview:image="photos/006.png"></div>
+			<div data-iview:image="photos/007.png"></div>
+			<div data-iview:image="photos/008.png"></div>
+			<div data-iview:image="photos/009.png"></div>
+			<div data-iview:image="photos/010.png"></div>
+			<div data-iview:image="photos/011.png"></div>
+			<div data-iview:image="photos/012.png"></div>
+			<div data-iview:image="photos/013.png"></div>
+			<div data-iview:image="photos/014.png"></div>
+		</div>
+	</div>
+
+
+</div>
+
+<div id="background-image">
+	<img src="img/bckg.jpg" width="1820" height="1024" />
+</div>
+<script type="text/javascript" src="js/jquery.fullscreen.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$("#background-image").fullscreenBackground();
+	});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30854466-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	</body>
+</html>
